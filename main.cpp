@@ -25,7 +25,8 @@ public: // CONSTRUCTORS
     // Maybe display all the files with their corresponding extension(type), date created, last modified and all these details
     for (std::size_t i = 0u; i < number_of_files_in_directory(pathToWatch); ++i)
     {
-      
+      // Iterating throughout the given directory and printing the file name and extension
+      std::cout << mfile[i] << mfile[i].extension() << std::endl;
     }
   }
 
