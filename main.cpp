@@ -42,3 +42,13 @@ public: // MEMBER FUNCTIONS
     return number_of_files;
   }
 };
+
+int main()
+{
+  // Btw the command used to log error messages to error.log is
+  // g++ main.cpp -o main 2> error.log
+
+  // --------ENTER CODE HERE--------
+
+  return 0;
+}

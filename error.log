@@ -1,0 +1,151 @@
+g++ er.cpp -o er 2> error.txt
+
+In file included from /usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h:33,
+                 from /usr/include/c++/11/bits/allocator.h:46,
+                 from /usr/include/c++/11/string:41,
+                 from /usr/include/c++/11/bits/locale_classes.h:40,
+                 from /usr/include/c++/11/bits/ios_base.h:41,
+                 from /usr/include/c++/11/ios:42,
+                 from /usr/include/c++/11/ostream:38,
+                 from /usr/include/c++/11/iostream:39,
+                 from er.cpp:1:
+/usr/include/c++/11/ext/new_allocator.h: In instantiation of ‘class __gnu_cxx::new_allocator<const std::filesystem::__cxx11::path&>’:
+/usr/include/c++/11/bits/allocator.h:124:11:   required from ‘class std::allocator<const std::filesystem::__cxx11::path&>’
+/usr/include/c++/11/bits/stl_vector.h:87:21:   required from ‘struct std::_Vector_base<const std::filesystem::__cxx11::path&, std::allocator<const std::filesystem::__cxx11::path&> >’
+/usr/include/c++/11/bits/stl_vector.h:389:11:   required from ‘class std::vector<const std::filesystem::__cxx11::path&>’
+er.cpp:19:45:   required from here
+/usr/include/c++/11/ext/new_allocator.h:62:26: error: forming pointer to reference type ‘const std::filesystem::__cxx11::path&’
+   62 |       typedef _Tp*       pointer;
+      |                          ^~~~~~~
+/usr/include/c++/11/ext/new_allocator.h:63:26: error: forming pointer to reference type ‘const std::filesystem::__cxx11::path&’
+   63 |       typedef const _Tp* const_pointer;
+      |                          ^~~~~~~~~~~~~
+/usr/include/c++/11/ext/new_allocator.h:103:7: error: forming pointer to reference type ‘const std::filesystem::__cxx11::path&’
+  103 |       allocate(size_type __n, const void* = static_cast<const void*>(0))
+      |       ^~~~~~~~
+/usr/include/c++/11/ext/new_allocator.h:132:7: error: forming pointer to reference type ‘const std::filesystem::__cxx11::path&’
+  132 |       deallocate(_Tp* __p, size_type __t __attribute__ ((__unused__)))
+      |       ^~~~~~~~~~
+In file included from /usr/include/c++/11/string:41,
+                 from /usr/include/c++/11/bits/locale_classes.h:40,
+                 from /usr/include/c++/11/bits/ios_base.h:41,
+                 from /usr/include/c++/11/ios:42,
+                 from /usr/include/c++/11/ostream:38,
+                 from /usr/include/c++/11/iostream:39,
+                 from er.cpp:1:
+/usr/include/c++/11/bits/allocator.h: In instantiation of ‘class std::allocator<const std::filesystem::__cxx11::path&>’:
+/usr/include/c++/11/bits/stl_vector.h:87:21:   required from ‘struct std::_Vector_base<const std::filesystem::__cxx11::path&, std::allocator<const std::filesystem::__cxx11::path&> >’
+/usr/include/c++/11/bits/stl_vector.h:389:11:   required from ‘class std::vector<const std::filesystem::__cxx11::path&>’
+er.cpp:19:45:   required from here
+/usr/include/c++/11/bits/allocator.h:133:26: error: forming pointer to reference type ‘const std::filesystem::__cxx11::path&’
+  133 |       typedef _Tp*       pointer;
+      |                          ^~~~~~~
+/usr/include/c++/11/bits/allocator.h:134:26: error: forming pointer to reference type ‘const std::filesystem::__cxx11::path&’
+  134 |       typedef const _Tp* const_pointer;
+      |                          ^~~~~~~~~~~~~
+In file included from /usr/include/c++/11/ext/alloc_traits.h:34,
+                 from /usr/include/c++/11/bits/basic_string.h:40,
+                 from /usr/include/c++/11/string:55,
+                 from /usr/include/c++/11/bits/locale_classes.h:40,
+                 from /usr/include/c++/11/bits/ios_base.h:41,
+                 from /usr/include/c++/11/ios:42,
+                 from /usr/include/c++/11/ostream:38,
+                 from /usr/include/c++/11/iostream:39,
+                 from er.cpp:1:
+/usr/include/c++/11/bits/alloc_traits.h: In instantiation of ‘struct std::allocator_traits<std::allocator<const std::filesystem::__cxx11::path&> >’:
+/usr/include/c++/11/ext/alloc_traits.h:48:10:   required from ‘struct __gnu_cxx::__alloc_traits<std::allocator<const std::filesystem::__cxx11::path&>, const std::filesystem::__cxx11::path&>’
+/usr/include/c++/11/bits/stl_vector.h:87:21:   required from ‘struct std::_Vector_base<const std::filesystem::__cxx11::path&, std::allocator<const std::filesystem::__cxx11::path&> >’
+/usr/include/c++/11/bits/stl_vector.h:389:11:   required from ‘class std::vector<const std::filesystem::__cxx11::path&>’
+er.cpp:19:45:   required from here
+/usr/include/c++/11/bits/alloc_traits.h:420:13: error: forming pointer to reference type ‘const std::filesystem::__cxx11::path&’
+  420 |       using pointer = _Tp*;
+      |             ^~~~~~~
+/usr/include/c++/11/bits/alloc_traits.h:423:13: error: forming pointer to reference type ‘const std::filesystem::__cxx11::path&’
+  423 |       using const_pointer = const _Tp*;
+      |             ^~~~~~~~~~~~~
+In file included from /usr/include/c++/11/bits/basic_string.h:40,
+                 from /usr/include/c++/11/string:55,
+                 from /usr/include/c++/11/bits/locale_classes.h:40,
+                 from /usr/include/c++/11/bits/ios_base.h:41,
+                 from /usr/include/c++/11/ios:42,
+                 from /usr/include/c++/11/ostream:38,
+                 from /usr/include/c++/11/iostream:39,
+                 from er.cpp:1:
+/usr/include/c++/11/ext/alloc_traits.h: In instantiation of ‘struct __gnu_cxx::__alloc_traits<std::allocator<const std::filesystem::__cxx11::path&>, const std::filesystem::__cxx11::path&>’:
+/usr/include/c++/11/bits/stl_vector.h:87:21:   required from ‘struct std::_Vector_base<const std::filesystem::__cxx11::path&, std::allocator<const std::filesystem::__cxx11::path&> >’
+/usr/include/c++/11/bits/stl_vector.h:389:11:   required from ‘class std::vector<const std::filesystem::__cxx11::path&>’
+er.cpp:19:45:   required from here
+/usr/include/c++/11/ext/alloc_traits.h:64:23: error: ‘allocate’ has not been declared in ‘__gnu_cxx::__alloc_traits<std::allocator<const std::filesystem::__cxx11::path&>, const std::filesystem::__cxx11::path&>::_Base_type’
+   64 |     using _Base_type::allocate;
+      |                       ^~~~~~~~
+/usr/include/c++/11/ext/alloc_traits.h:65:23: error: ‘deallocate’ has not been declared in ‘__gnu_cxx::__alloc_traits<std::allocator<const std::filesystem::__cxx11::path&>, const std::filesystem::__cxx11::path&>::_Base_type’
+   65 |     using _Base_type::deallocate;
+      |                       ^~~~~~~~~~
+In file included from /usr/include/c++/11/vector:67,
+                 from er.cpp:3:
+/usr/include/c++/11/bits/stl_vector.h: In instantiation of ‘class std::vector<const std::filesystem::__cxx11::path&>’:
+er.cpp:19:45:   required from here
+/usr/include/c++/11/bits/stl_vector.h:474:20: error: ‘_M_allocate’ has not been declared in ‘std::vector<const std::filesystem::__cxx11::path&>::_Base’
+  474 |       using _Base::_M_allocate;
+      |                    ^~~~~~~~~~~
+/usr/include/c++/11/bits/stl_vector.h:475:20: error: ‘_M_deallocate’ has not been declared in ‘std::vector<const std::filesystem::__cxx11::path&>::_Base’
+  475 |       using _Base::_M_deallocate;
+      |                    ^~~~~~~~~~~~~
+/usr/include/c++/11/bits/stl_vector.h:1168:7: error: forming pointer to reference type ‘const std::filesystem::__cxx11::path&’
+ 1168 |       data() _GLIBCXX_NOEXCEPT
+      |       ^~~~
+/usr/include/c++/11/bits/stl_vector.h:1172:7: error: forming pointer to reference type ‘const std::filesystem::__cxx11::path&’
+ 1172 |       data() const _GLIBCXX_NOEXCEPT
+      |       ^~~~
+/usr/include/c++/11/bits/stl_vector.h:1203:7: error: ‘void std::vector<_Tp, _Alloc>::push_back(std::vector<_Tp, _Alloc>::value_type&&) [with _Tp = const std::filesystem::__cxx11::path&; _Alloc = std::allocator<const std::filesystem::__cxx11::path&>; std::vector<_Tp, _Alloc>::value_type = const std::filesystem::__cxx11::path&]’ cannot be overloaded with ‘void std::vector<_Tp, _Alloc>::push_back(const value_type&) [with _Tp = const std::filesystem::__cxx11::path&; _Alloc = std::allocator<const std::filesystem::__cxx11::path&>; std::vector<_Tp, _Alloc>::value_type = const std::filesystem::__cxx11::path&]’
+ 1203 |       push_back(value_type&& __x)
+      |       ^~~~~~~~~
+/usr/include/c++/11/bits/stl_vector.h:1187:7: note: previous declaration ‘void std::vector<_Tp, _Alloc>::push_back(const value_type&) [with _Tp = const std::filesystem::__cxx11::path&; _Alloc = std::allocator<const std::filesystem::__cxx11::path&>; std::vector<_Tp, _Alloc>::value_type = const std::filesystem::__cxx11::path&]’
+ 1187 |       push_back(const value_type& __x)
+      |       ^~~~~~~~~
+/usr/include/c++/11/bits/stl_vector.h: In instantiation of ‘std::_Vector_base<_Tp, _Alloc>::~_Vector_base() [with _Tp = const std::filesystem::__cxx11::path&; _Alloc = std::allocator<const std::filesystem::__cxx11::path&>]’:
+/usr/include/c++/11/bits/stl_vector.h:487:7:   required from here
+/usr/include/c++/11/bits/stl_vector.h:335:31: error: ‘struct std::_Vector_base<const std::filesystem::__cxx11::path&, std::allocator<const std::filesystem::__cxx11::path&> >::_Vector_impl’ has no member named ‘_M_start’
+  335 |         _M_deallocate(_M_impl._M_start,
+      |                       ~~~~~~~~^~~~~~~~
+/usr/include/c++/11/bits/stl_vector.h:336:31: error: ‘struct std::_Vector_base<const std::filesystem::__cxx11::path&, std::allocator<const std::filesystem::__cxx11::path&> >::_Vector_impl’ has no member named ‘_M_end_of_storage’
+  336 |                       _M_impl._M_end_of_storage - _M_impl._M_start);
+      |                       ~~~~~~~~^~~~~~~~~~~~~~~~~
+/usr/include/c++/11/bits/stl_vector.h:336:59: error: ‘struct std::_Vector_base<const std::filesystem::__cxx11::path&, std::allocator<const std::filesystem::__cxx11::path&> >::_Vector_impl’ has no member named ‘_M_start’
+  336 |                       _M_impl._M_end_of_storage - _M_impl._M_start);
+      |                                                   ~~~~~~~~^~~~~~~~
+/usr/include/c++/11/bits/stl_vector.h: In instantiation of ‘std::vector<_Tp, _Alloc>::~vector() [with _Tp = const std::filesystem::__cxx11::path&; _Alloc = std::allocator<const std::filesystem::__cxx11::path&>]’:
+er.cpp:23:31:   required from here
+/usr/include/c++/11/bits/stl_vector.h:680:37: error: ‘struct std::_Vector_base<const std::filesystem::__cxx11::path&, std::allocator<const std::filesystem::__cxx11::path&> >::_Vector_impl’ has no member named ‘_M_start’
+  680 |         std::_Destroy(this->_M_impl._M_start, this->_M_impl._M_finish,
+      |                       ~~~~~~~~~~~~~~^~~~~~~~
+/usr/include/c++/11/bits/stl_vector.h:680:61: error: ‘struct std::_Vector_base<const std::filesystem::__cxx11::path&, std::allocator<const std::filesystem::__cxx11::path&> >::_Vector_impl’ has no member named ‘_M_finish’
+  680 |         std::_Destroy(this->_M_impl._M_start, this->_M_impl._M_finish,
+      |                                               ~~~~~~~~~~~~~~^~~~~~~~~
+/usr/include/c++/11/bits/stl_vector.h: In instantiation of ‘std::vector<_Tp, _Alloc>::reference std::vector<_Tp, _Alloc>::operator[](std::vector<_Tp, _Alloc>::size_type) [with _Tp = const std::filesystem::__cxx11::path&; _Alloc = std::allocator<const std::filesystem::__cxx11::path&>; std::vector<_Tp, _Alloc>::reference = const std::filesystem::__cxx11::path&; std::vector<_Tp, _Alloc>::size_type = long unsigned int]’:
+er.cpp:29:27:   required from here
+/usr/include/c++/11/bits/stl_vector.h:1046:32: error: ‘struct std::_Vector_base<const std::filesystem::__cxx11::path&, std::allocator<const std::filesystem::__cxx11::path&> >::_Vector_impl’ has no member named ‘_M_start’
+ 1046 |         return *(this->_M_impl._M_start + __n);
+      |                  ~~~~~~~~~~~~~~^~~~~~~~
+/usr/include/c++/11/bits/stl_vector.h: In instantiation of ‘void std::vector<_Tp, _Alloc>::push_back(const value_type&) [with _Tp = const std::filesystem::__cxx11::path&; _Alloc = std::allocator<const std::filesystem::__cxx11::path&>; std::vector<_Tp, _Alloc>::value_type = const std::filesystem::__cxx11::path&]’:
+er.cpp:39:22:   required from here
+/usr/include/c++/11/bits/stl_vector.h:1189:27: error: ‘struct std::_Vector_base<const std::filesystem::__cxx11::path&, std::allocator<const std::filesystem::__cxx11::path&> >::_Vector_impl’ has no member named ‘_M_finish’
+ 1189 |         if (this->_M_impl._M_finish != this->_M_impl._M_end_of_storage)
+      |             ~~~~~~~~~~~~~~^~~~~~~~~
+/usr/include/c++/11/bits/stl_vector.h:1189:54: error: ‘struct std::_Vector_base<const std::filesystem::__cxx11::path&, std::allocator<const std::filesystem::__cxx11::path&> >::_Vector_impl’ has no member named ‘_M_end_of_storage’
+ 1189 |         if (this->_M_impl._M_finish != this->_M_impl._M_end_of_storage)
+      |                                        ~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~
+/usr/include/c++/11/bits/stl_vector.h:1192:67: error: ‘struct std::_Vector_base<const std::filesystem::__cxx11::path&, std::allocator<const std::filesystem::__cxx11::path&> >::_Vector_impl’ has no member named ‘_M_finish’
+ 1192 |             _Alloc_traits::construct(this->_M_impl, this->_M_impl._M_finish,
+      |                                                     ~~~~~~~~~~~~~~^~~~~~~~~
+/usr/include/c++/11/bits/stl_vector.h:1194:29: error: ‘struct std::_Vector_base<const std::filesystem::__cxx11::path&, std::allocator<const std::filesystem::__cxx11::path&> >::_Vector_impl’ has no member named ‘_M_finish’
+ 1194 |             ++this->_M_impl._M_finish;
+      |               ~~~~~~~~~~~~~~^~~~~~~~~
+/usr/include/c++/11/bits/stl_vector.h: In instantiation of ‘std::_Vector_base<_Tp, _Alloc>::_Vector_impl_data::_Vector_impl_data() [with _Tp = const std::filesystem::__cxx11::path&; _Alloc = std::allocator<const std::filesystem::__cxx11::path&>]’:
+/usr/include/c++/11/bits/stl_vector.h:133:19:   required from ‘std::_Vector_base<_Tp, _Alloc>::_Vector_impl::_Vector_impl() [with _Tp = const std::filesystem::__cxx11::path&; _Alloc = std::allocator<const std::filesystem::__cxx11::path&>]’
+/usr/include/c++/11/bits/stl_vector.h:288:7:   required from here
+/usr/include/c++/11/bits/stl_vector.h:98:54: error: using invalid field ‘std::_Vector_base<_Tp, _Alloc>::_Vector_impl_data::_M_start’
+   98 |         : _M_start(), _M_finish(), _M_end_of_storage()
+      |                                                      ^
+/usr/include/c++/11/bits/stl_vector.h:98:54: error: using invalid field ‘std::_Vector_base<_Tp, _Alloc>::_Vector_impl_data::_M_finish’
+/usr/include/c++/11/bits/stl_vector.h:98:54: error: using invalid field ‘std::_Vector_base<_Tp, _Alloc>::_Vector_impl_data::_M_end_of_storage’
